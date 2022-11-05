@@ -105,6 +105,7 @@ body{
         width:100%;
         max-width:1300px;
         padding:0;
+        position: sticky;
     }
     .navbar__menu{
         display:grid;
@@ -127,8 +128,10 @@ body{
         font-size:1.6rem;
     }
 
-    #navbar__logo {
-        padding-left: 25px;
+    #navbar__logo img{
+        padding-left: 5vw;
+        height: 5vh;
+        width: auto;
     }
 
 .navbar__toggle .bar {
@@ -304,6 +307,7 @@ body{
     flex-direction:column;
     justify-content:center;
     color:#fff;
+    align-items: center;
 }
 
 .main__content li{
@@ -477,7 +481,13 @@ button{
     margin-bottom:1rem;
     text-decoration:none;
     transition:0.3s ease-out;
+    display: flex;
+    align-items: center;
 }
+.footer__links--items a span{
+    margin-left: 1rem;
+}
+
 .footer__links--items a:hover{
     color:#FFA500;
     transition:0.3s ease-out;
@@ -538,26 +548,3 @@ font-size:24px;
         width:100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
