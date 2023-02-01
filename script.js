@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
-const navBarMenu = document.querySelector(".navbar__menu");
+const navBarMenu = document.querySelector(".navbarMenu");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -7,7 +7,15 @@ hamburger.addEventListener("click", () => {
 })
 
 document.querySelectorAll
-    (".navbar__links").forEach(n => n.addEventListener
+    (".navbarItem").forEach(n => n.addEventListener
+        ("click", () => {
+            hamburger.classList.remove("active");
+            navBarMenu.classList.remove("active");
+        }
+))
+
+document.querySelectorAll
+    (".btnone").forEach(n => n.addEventListener
         ("click", () => {
             hamburger.classList.remove("active");
             navBarMenu.classList.remove("active");
